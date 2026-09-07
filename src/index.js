@@ -1,3 +1,4 @@
 module.exports = {
-  ...require('./utils/parseBool'),
+  ...require('./utils/parse-format'),
+  ...require('./utils/api-exception'),
 };

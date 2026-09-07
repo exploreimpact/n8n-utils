@@ -9,6 +9,11 @@ function parseBool(value, fallback = false) {
   return fallback;
 }
 
+function parseString(value, fallback = null) {
+  return value ? String(value).trim() : null;
+}
+
 module.exports = {
   parseBool,
+  parseString,
 };
