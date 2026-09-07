@@ -14,7 +14,7 @@ function parseApiException(jsonString) {
   try {
     return JSON.parse(jsonString);
   } catch (e) {
-    return jsonString;
+    return jsonString ?? [];
   }
 }
 
