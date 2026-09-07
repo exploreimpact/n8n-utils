@@ -1,6 +1,6 @@
 {
   "name": "@exploreimpact/n8n-utils",
-  "version": "0.1.19",
+  "version": "0.1.20",
   "repository": {
     "type": "git",
     "url": "https://github.com/exploreimpact/n8n-utils"
@@ -12,7 +12,9 @@
     "README.md",
     "LICENSE"
   ],
-  "scripts": {},
+  "scripts": {
+    "release": "git add . && git commit -am \"Release\" && npm version patch -m \"Release\" && git push"
+  },
   "keywords": [
     "n8n",
     "utils",
