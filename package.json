@@ -1,6 +1,6 @@
 {
   "name": "@exploreimpact/n8n-utils",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A JavaScript library to provide common utilities to n8n for usage in \"code\" nodes.",
   "main": "src/index.js",
   "files": [
