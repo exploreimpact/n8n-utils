@@ -10,7 +10,7 @@ function throwApiException(message, code, context) {
   throw new Error(JSON.stringify(errorObject));
 }
 
-function parseApiException(jsonString) {
+function parseApiException2(jsonString) {
   let result = [];
   try {
     result = JSON.parse(jsonString);
@@ -22,5 +22,5 @@ function parseApiException(jsonString) {
 
 module.exports = {
   throwApiException,
-  parseApiException,
+  parseApiException2,
 };
