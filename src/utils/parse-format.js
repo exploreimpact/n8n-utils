@@ -10,7 +10,7 @@ function parseBool(value, fallback = false) {
 }
 
 function parseString(value, fallback = null) {
-  return value ? String(value).trim() : null;
+  return String(value ? String(value) : fallback).trim();
 }
 
 module.exports = {
