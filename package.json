@@ -1,0 +1,29 @@
+{
+  "name": "@exploreimpact/n8n-utils",
+  "version": "0.1.0",
+  "description": "A JavaScript library to provide common utilities to n8n for usage in \"code\" nodes.",
+  "main": "src/index.js",
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {},
+  "keywords": [
+    "n8n",
+    "utils",
+    "javascript",
+    "commonjs"
+  ],
+  "author": {
+    "name": "Claudio De Facci",
+    "email": "claudio@exploreimpact.de",
+    "url": "https://exploreimpact.de"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=18"
+  }
+}
