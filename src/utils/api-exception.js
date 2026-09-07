@@ -1,15 +1,13 @@
-function throwApiException(message, code, context) {
-  const exception = new Error(message);
-
-  Object.assign(exception, {
+function createApiExceptionResponse(message, code, context) {
+  return {
+    ok: false,
     code: code ?? 500,
+    message: message,
     context: context ?? {},
     // ...
-  });
-
-  throw exception;
+  };
 }
 
 module.exports = {
-  throwApiException,
+  createApiExceptionResponse: createApiExceptionResponse,
 };
