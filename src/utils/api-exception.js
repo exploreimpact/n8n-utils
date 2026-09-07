@@ -7,7 +7,7 @@ function throwApiException(message, code, context) {
     // ...
   });
 
-  return exception;
+  throw exception;
 }
 
 module.exports = {
