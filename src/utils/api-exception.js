@@ -11,17 +11,6 @@ function throwApiException(message, code, context) {
 }
 
 function parseApiException(jsonString) {
-  return [];
-  // let result = [];
-  // try {
-  //   result = JSON.parse(jsonString);
-  // } catch (e) {
-  //   result = jsonString ?? [];
-  // }
-  // return result;
-}
-
-function parseApiError(jsonString) {
   let result = [];
   try {
     result = JSON.parse(jsonString);
@@ -34,5 +23,4 @@ function parseApiError(jsonString) {
 module.exports = {
   throwApiException,
   parseApiException,
-  parseApiError,
 };
