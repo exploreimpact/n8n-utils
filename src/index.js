@@ -1,4 +1,9 @@
+const { parseBool, parseString } = require('./utils/parse-format');
+const { throwApiException, parseApiException2 } = require('./utils/api-exception');
+
 module.exports = {
-  ...require('./utils/parse-format'),
-  ...require('./utils/api-exception'),
+  parseBool,
+  parseString,
+  throwApiException,
+  parseApiException2,
 };
