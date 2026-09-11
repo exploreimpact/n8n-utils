@@ -15,7 +15,12 @@ function parseApiException(jsonString) {
   try {
     result = JSON.parse(jsonString);
   } catch (e) {
-    result = jsonString ?? {};
+    result = {
+      ok: false,
+      code: 500,
+      message: jsonString ?? 'unknown error',
+      context: {},
+    };
   }
   return result;
 }
