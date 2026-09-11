@@ -19,7 +19,9 @@ function parseApiException(jsonString) {
       ok: false,
       code: 500,
       message: jsonString ?? 'unknown error',
-      context: {},
+      context: {
+        source: 'unexpected error',
+      },
     };
   }
   return result;
