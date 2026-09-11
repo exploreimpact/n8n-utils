@@ -11,11 +11,11 @@ function throwApiException(message, code, context) {
 }
 
 function parseApiException(jsonString) {
-  let result = [];
+  let result = {};
   try {
     result = JSON.parse(jsonString);
   } catch (e) {
-    result = jsonString ?? [];
+    result = jsonString ?? {};
   }
   return result;
 }
